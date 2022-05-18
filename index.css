@@ -7,6 +7,16 @@
     --cyan: #00ffd5;
 }
 
+@keyframes colourchange{
+    from {background-color: var(--cyan);}
+    25% {background-color: var(--lime);}
+    50% {background-color: var(--yellow);}
+    75% {background-color: var(--orange);}
+    to {background-color: var(--cyan);}
+}
+
+
+
 html {
     margin: 0px;
     padding: 0px;
@@ -34,7 +44,7 @@ header h3 {
     font-family: 'Radio Canada', sans-serif;
     font-weight: lighter;
     margin: 0%;
-    padding-bottom: 3px;
+    padding-bottom: 0px;
 }
 
 header {
@@ -43,14 +53,6 @@ header {
     animation-iteration-count: infinite;
     animation-direction: alternate-reverse;
   }
-  
-@keyframes colourchange{
-    from {background-color: var(--cyan);}
-    25% {background-color: var(--lime);}
-    50% {background-color: var(--yellow);}
-    75% {background-color: var(--orange);}
-    to {background-color: var(--cyan);}
-}
 
 
 .blurb {
@@ -58,76 +60,44 @@ header {
 }
 
 .blurb p{
+    margin-top: 3px;
     font-family: 'Radio Canada', sans-serif;
     font-weight: lighter;
 }
 
 .blurb h2 {
+    margin-bottom: 0;
     font-family: 'Radio Canada', sans-serif;
     font-weight: bolder;
-    text-align: center;
 }
 
 
-.blurb ul {
-    list-style-position: inside;
-    padding-left: 0;
-    margin-left: auto;
-    margin-right: auto;
-    font-family: 'Radio Canada', sans-serif;
-    font-weight: lighter;
-    text-align: center;
-}
 
 
-/*
-▀█▀ ▄▀▄ ██▄ █   ██▀ 
- █  █▀█ █▄█ █▄▄ █▄▄ 
- */
 
-.blurb table {
-    margin-left: auto;
-    margin-right: auto;
-}
 
- .blurb table, td, tr{
-    border: 1px solid black;
-    border-collapse: collapse;
-  }
 
-.blurb table th {
-    font-weight: bolder;
-    text-align: center;
-    font-family: 'Radio Canada', sans-serif;
-}
-
-.blurb table td {
-    font-weight: lighter;
-    text-align: center;
-    font-family: 'Radio Canada', sans-serif;
-}
 
 /*
 █▀ ▄▀▄ ▄▀▄ ▀█▀ ██▀ █▀▄ 
 █▀ ▀▄▀ ▀▄▀  █  █▄▄ █▀▄ 
 */
 
-.bottom {
-    padding-bottom: 2vh;
+.wrapper { /* strechs page if not enough content */
+    min-height: calc(100vh - 23px);
 }
+
 
 footer {
     text-align: center;
-    font-weight: bold;
-    font-family: 'Radio Canada', sans-serif;
-
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100vw;
-
     animation: colourchange;
     animation-duration: 6s;
     animation-iteration-count: infinite;
     animation-direction: alternate-reverse;
+}
+
+footer small a {
+    color: var(--black);
+    font-family: 'Radio Canada', sans-serif;
+    text-decoration: none;
 }
