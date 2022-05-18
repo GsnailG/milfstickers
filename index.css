@@ -72,9 +72,16 @@ header {
 }
 
 
+.gallery img{
+    margin: 0;
+}
 
 
 
+
+.top-space {
+    margin-top: 20px;
+}
 
 
 
