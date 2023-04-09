@@ -99,6 +99,9 @@ div {
 
 .page_1 .text {
 
+    margin-left: auto;
+    margin-right: auto;
+    width: 70vw;
     font-family: 'Radio Canada', sans-serif;
     font-weight: lighter;
 
