@@ -7,6 +7,22 @@
     --cyan: #00ffd5;
 }
 
+@keyframes colourchange{
+    from {background-color: var(--cyan);}
+    25% {background-color: var(--lime);}
+    50% {background-color: var(--yellow);}
+    75% {background-color: var(--orange);}
+    to {background-color: var(--cyan);}
+}
+
+@keyframes colourchangetext{
+    from {color: var(--cyan);}
+    25% {color: var(--lime);}
+    50% {color: var(--yellow);}
+    75% {color: var(--orange);}
+    to {color: var(--cyan);}
+}
+
 html {
     margin: 0px;
     padding: 0px;
@@ -17,45 +33,79 @@ body {
     padding: 0px;
 }
 
+div {
+    padding: 0px;
+    margin: 0px;
+}
 
-header {
-    color: var(--black);
+.intro {
+    background-image: url(inner_printer_edited.jpg);
+
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    /*
+    animation: colourchange;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+    */
+    height: 100vh;
+
+    animation: colourchangetext 6s infinite alternate-reverse;
     text-align: center;
 }
 
-header h1{
+.intro h1 {
     font-family: 'Radio Canada', sans-serif;
     font-weight: bold;
-    margin: 0%;
     padding-top: 3px;
+    margin: 0px;
 }
 
-header h3 {
+.intro h3 {
     font-family: 'Radio Canada', sans-serif;
     font-weight: lighter;
     margin: 0%;
     padding-bottom: 3px;
 }
 
-header {
+.wrapthosemilfs { 
+    background-color: var(--black);
+    padding: 20px 20px 20px 20px;
+}
+
+
+/* page 1*/
+
+.page_1 {
+
+    display: flex;
+
+    width: 100vw;
+    padding: 0px;
+    margin: 0px;
+
     animation: colourchange;
     animation-duration: 6s;
     animation-iteration-count: infinite;
     animation-direction: alternate-reverse;
-  }
-  
-@keyframes colourchange{
-    from {background-color: var(--cyan);}
-    25% {background-color: var(--lime);}
-    50% {background-color: var(--yellow);}
-    75% {background-color: var(--orange);}
-    to {background-color: var(--cyan);}
 }
 
+.page_1 .text {
 
-.blurb p{
     font-family: 'Radio Canada', sans-serif;
-    font-weight: initial;
+    font-weight: lighter;
 
-    padding: 1% 20% 0 20%;
+    padding: 20px;
+}
+
+.page_1 .text b {
+    font-family: 'Radio Canada', sans-serif;
+    font-weight: bold;
 }
