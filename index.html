@@ -1,12 +1,14 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-
     <meta name="viewport" content="width=device-widt, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="index.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+
     <link href="https://fonts.googleapis.com/css2?family=Radio+Canada:wght@300;500;700&display=swap" rel="stylesheet">
 </head>
 
@@ -19,7 +21,7 @@
     </div>
     </div>
 
-    <div class="page_1">
+    <div class="page_1 rellax" data-rellax-speed="4">
         <div class="text">
         <p>
             as the creator of <b>milfstickers.com</b>, its been a 
@@ -28,8 +30,32 @@
             i believe its fit for the consumer to use, and enjoy.
         </p>
         </div>
-        <div class="nothing"></div>
     </div>
+
+    <div class="page_2 rellax" data-rellax-speed="5">
+
+        <div class="wrapthosepg2 rellax" data-rellax-speed="-0.1">
+        <div class="text">
+            fueled by soundcloud dj mixes and spotify, at least an hour of effort was put
+            into these artworks of pure beauty, in order
+            to keep up with the standards put in here at <b>milfstickers.com</b>
+        </div>
+
+        <div class="roundtable_scrolly">
+            <div class="actual_scrolly">
+                <img class="carousel-item-active" src="milfsticker1.png">
+                <img class="carousel-item" src="milfsticker2.png">
+            </div>
+        </div>
+        </div>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/gh/dixonandmoe/rellax@master/rellax.min.js"></script>    
+    <script>    
+      // Accepts any class name
+      var rellax = new Rellax('.rellax');
+    </script>
 
 </body>
 
