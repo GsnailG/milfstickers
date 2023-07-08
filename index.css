@@ -31,6 +31,7 @@ html {
 body {
     margin: 0px;
     padding: 0px;
+    background-image: url(/inner_printer_edited.jpg);
 }
 
 div {
@@ -63,25 +64,26 @@ div {
 }
 
 .intro h1 {
+    font-size: 10vw;
     font-family: 'Radio Canada', sans-serif;
     font-weight: bold;
     padding-top: 3px;
     margin: 0px;
 }
 
-.intro h3 {
+.intro small {
+    font-size: 5vw;
     font-family: 'Radio Canada', sans-serif;
     font-weight: lighter;
     margin: 0%;
     padding-bottom: 3px;
 }
 
-.wrapthosemilfs { 
-    background-color: rgba(0, 0, 0, 0.5);
+.introwrap{ 
+    background-color: rgba(0, 0, 0, 0.7);
     backdrop-filter: blur(4px);
     padding: 20px 20px 20px 20px;
 }
-
 
 /* page 1*/
 
@@ -96,68 +98,97 @@ div {
     animation-duration: 6s;
     animation-iteration-count: infinite;
     animation-direction: alternate-reverse;
+
+    height: 105vh;
 }
 
-.page_1 .text {
+.page_1 .page_1content {
+    margin-top: 20vh;
     margin-left: auto;
     margin-right: auto;
     width: 70vw;
+    font-size: larger;
 
     padding-top: 34px;
     padding-bottom: 34px;
+    font-weight: 400;
+}
 
+.page_1subnote {
+    font-size: 2vh;
+}
+
+
+.page_2 {
+    height: 105vh;
+    background-image: url(/projector_edited.jpg);
+    background-size: 75vmax;
+}
+
+.page_2content {
+    margin-left: auto;
+    margin-right: auto;
+    width: 70vw;
+    font-size: larger;
+
+    padding-top: 34px;
+    padding-bottom: 34px;
+}
+
+.page_2text {
+    margin-top: 20vh;
+    font-weight: 400;
+
+    animation: colourchangetext;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+
+    background-color: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(2px);
+    padding: 20px 20px 20px 20px;
+}
+
+.page_3button {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.page_3button button {
+    justify-content: center;
+}
+
+footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+
+    background-color: var(--black);
+
+    color: white;
+    text-align: center;
+}
+
+footer a {
+    animation: colourchangetext;
+    animation-duration: 12s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+}
+
+.text_styling small{
     font-family: 'Radio Canada', sans-serif;
     font-weight: lighter;
 }
 
-
-.page_1 .text p {
-    margin: 0;
-}
-
-.page_1 .text b {
+.text_styling b {
     font-family: 'Radio Canada', sans-serif;
     font-weight: bold;
 }
 
-/* page 2 */
-
-
-.page_2 {
-    background-image: url(projector_edited.jpg);
+.paragraph_size {
+    font-size: 5vmin;
 }
-
-.page_2 .text{
-
-    padding-top: 34px;
-    padding-bottom: 34px;
-
-    margin-left: auto;
-    margin-right: auto;
-    width: 70vw;
-    font-family: 'Radio Canada', sans-serif;
-    font-weight: lighter;
-
-}
-
-.page_2 .text p{
-
-    height: 114px;
-    display: block;
-
-}
-
-.page_2 .wrapthosepg2 .actual_scrolly {
-
-    display: flex;
-    margin-left: auto;
-    margin-right: auto;
-    padding-bottom: 34px;
-    justify-content: center;  
-
-}
-
-.page_2 .wrapthosepg2 .actual_scrolly img {
-    width: 70vw; 
-}
-
